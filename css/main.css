@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Raleway;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+
+    .log{
+        margin: 30 50;
+    }
+}
