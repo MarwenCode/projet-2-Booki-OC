@@ -1,19 +1,136 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: Raleway;
-    max-width: 1440px;
-    margin: auto;
+body {
+  font-family: Raleway;
+  max-width: 1440px;
+  margin: auto;
 }
 
 header {
-    display: flex;
+  display: flex;
+  align-items: center;
 
-    .log{
-        margin: 30 50;
+  .logo {
+    margin: 30px 50px;
+  }
+
+  .menus {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  #liste_menus {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #liste_menus li {
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  #liste_menus li:first-child a {
+    color: #0065fc;
+  }
+
+  #liste_menus a {
+    margin-right: 20px;
+    text-decoration: none;
+  }
+}
+
+.bloc-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  align-self: stretch;
+}
+
+.title {
+  color: #000;
+  margin-left: 0;
+}
+
+.title h1 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 377px;
+    height: 49px;
+    flex-direction: row; 
+   
+    
+    
+  
+   
+}
+
+.logo {
+    width: 50px;
+    background-color: rgb(245, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    color: black;
+    flex: 1;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-bar input {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 49px;
+    border: none; /* Added the semicolon here */
+
+    &:focus {
+        outline: none;
     }
 }
+
+.search-bar input::placeholder {
+    color: #000;
+}
+
+
+.search-bar button {
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0065fc;
+    background: #0065fc;
+    padding: 15px 16px;
+    color: white; 
+    height: 49px;
+    cursor: pointer;
+}
+
