@@ -111,7 +111,8 @@ header .logo img {
   font-weight: 700;
   line-height: normal;
   height: 49px;
-  border: none; /* Added the semicolon here */
+  border: none;
+  /* Added the semicolon here */
 
   &:focus {
     outline: none;
@@ -196,26 +197,20 @@ header .logo img {
 }
 
 .title-heb {
-  grid-column: 1 / -1; 
+  grid-column: 1 / -1;
   text-align: start;
   font-size: 24px;
-  margin-bottom: 20px
- 
+  margin-bottom: 20px;
 }
-
-
 
 .offre-model {
   background: #fff;
 
- 
   border-radius: 5px;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   height: 220px;
-
-  
 }
 
 .offre-model img {
@@ -228,10 +223,7 @@ header .logo img {
   border-radius: 20px 20px 0px 0px;
   border: 5px solid #fff;
 
-
   width: 100%;
-
-
 }
 
 .offre-model h2 {
@@ -270,7 +262,6 @@ header .logo img {
 
 .activités {
   width: 100%;
-
 }
 
 .act-title {
@@ -279,25 +270,66 @@ header .logo img {
 
 .act-cards {
   display: flex;
-  justify-content: space-between;
 }
 
+.card{
+  border-radius: 20px;
 
-
-.cards {
-border-radius: 20px;
-
-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .act-cards .card img {
-  max-width: 100%; 
+  width: 327px; 
+  height: auto; 
   height: 380px;
 }
 
 
-
-
-
-
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-bg-color);
+  padding: 1.25rem;
+  margin-top: 4.0625rem;
+}
+.footer-links {
+  width: 100%;
+  display: flex;
+  gap: 3.125rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-links-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footer-links-item h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.footer-links-item p {
+  font-weight: 400;
+}
+.footer-links-item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footer-links-item ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-links-item ul li a {
+  font-weight: 400;
+  color: gray;
+}
+.footer-links-item ul li a:hover {
+  color: black;
+}
