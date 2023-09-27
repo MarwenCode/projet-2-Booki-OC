@@ -189,6 +189,15 @@ header .logo img {
   line-height: normal;
 }
 
+.infos-logement {
+  display: flex;
+  gap: 10px;
+
+  .fa-solid {
+    color: #0065fc;
+  }
+}
+
 .hebergements {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,13 +209,13 @@ header .logo img {
   grid-column: 1 / -1;
   text-align: start;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .offre-model {
   background: #fff;
 
-  border-radius: 5px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,7 +260,8 @@ header .logo img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 95px;
+  margin-left: 20px;
+  width: 100%;
 }
 
 .info h2,
@@ -260,76 +270,91 @@ header .logo img {
   align-self: flex-start;
 }
 
+.heb-plus {
+  color: #000;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .activités {
   width: 100%;
 }
 
 .act-title {
+  margin: 40px;
+  color: #000;
+
   font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .act-cards {
   display: flex;
+  justify-content: space-between;
 }
 
-.card{
+.cards {
   border-radius: 20px;
+  margin-right: 20px;
 
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
-.act-cards .card img {
-  width: 327px; 
-  height: auto; 
+.act-cards .cards img {
+  width: 300px;
   height: 380px;
+  border-radius: 20px 20px 0px 0px;
 }
 
+.card-content {
+  padding: 10px;
+}
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--main-bg-color);
   padding: 1.25rem;
-  margin-top: 4.0625rem;
+  margin-top: 55px;
+  background-color: #ebedf0;
 }
-.footer-links {
+.links {
   width: 100%;
   display: flex;
-  gap: 3.125rem;
   justify-content: center;
   align-items: flex-start;
 }
-.footer-links-item {
+.item {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
 }
-.footer-links-item h3 {
+.item h3 {
   font-weight: 700;
-  font-size: 1.125rem;
 }
-.footer-links-item p {
+.item p {
   font-weight: 400;
 }
-.footer-links-item ul {
+.item ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
 }
-.footer-links-item ul li {
+.item ul li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.footer-links-item ul li a {
+.item ul li a {
   font-weight: 400;
-  color: gray;
-}
-.footer-links-item ul li a:hover {
-  color: black;
+  color: rgb(37, 36, 36);
 }
