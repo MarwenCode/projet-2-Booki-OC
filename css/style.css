@@ -135,8 +135,19 @@ a {
     }
 
    .menus {
-    margin-right: 30px;
+    margin-right: 80px;
     margin-top: 20px;
+   }
+
+   .title .title-heb {
+    font-size:medium;
+    
+    margin-top: 10px;
+
+   }
+
+   .search-bar {
+    width: 20%;
    }
 
 
@@ -209,6 +220,22 @@ a {
    }
 
 
+   .filterAll {
+    width: 100;
+   }
+
+   .filterAll ul li i {
+    width: 50%;
+    font-size: small;
+   }
+
+   .fas {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+   
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -265,3 +292,109 @@ a {
       }
 
     }
+
+
+
+
+/* Small devices (phones with a minimum width of 375px) */
+
+
+
+@media (min-width: 365px) and (max-width: 768px) {
+    .main-container {
+        /* Your styles for the main container */
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    
+        justify-content: center;
+        margin-left:  50px;
+        align-items: center;
+
+       
+    }
+
+    .log  {
+        width: 100px;
+    }
+
+    
+
+    .menus {
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .bloc-info {
+
+        width: 100%;
+    }
+
+    .title .title-heb {
+        font-size:large;
+        width: 100%; 
+        margin-top: 10px;
+    }
+    
+    .title .sub-title {
+      font-size: 16px;
+       width: 100%;
+
+    }
+    
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .activités {
+        /* Your styles for the activités section */
+    }
+
+    .act-cards {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cards {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .cards img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
