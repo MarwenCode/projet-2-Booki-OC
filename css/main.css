@@ -112,7 +112,7 @@ header .logo img {
   line-height: normal;
   height: 49px;
   border: none;
-  /* Added the semicolon here */
+ 
 
   &:focus {
     outline: none;
@@ -278,6 +278,8 @@ header .logo img {
   font-weight: 700;
 }
 
+
+
 .activités {
   width: 100%;
 }
@@ -358,5 +360,11 @@ header .logo img {
   font-weight: 400;
   color: rgb(37, 36, 36);
 }
+
+
+
+
+
+
 
 
