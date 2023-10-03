@@ -31,13 +31,29 @@ header {
     justify-content: space-between;
   }
 
+  #liste_menus li:first-child {
+    display: flex;
+    align-items: center;
+  }
+
   #liste_menus li {
     margin-left: 20px;
     align-items: center;
+    position: relative;
   }
 
   #liste_menus li:first-child a {
     color: #0065fc;
+    /* border-top: solid 3px #0065fc; */
+    display: flex;
+  
+  }
+  #liste_menus li:first-child::before {
+    content: ""; 
+    border-top: solid 3px #0065fc;
+    position: absolute; 
+    width: 80%; 
+    top: -20px; 
   }
 
   #liste_menus a {
@@ -198,7 +214,122 @@ header .logo img {
   }
 }
 
+
+
+
+
+
 .hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.title-heb {
+  width: 100%;
+  text-align: start;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.offre-model {
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 30px); 
+  max-width: 300px; 
+  align-items: center;
+
+
+  
+
+  
+ 
+  
+}
+
+.offre-model img {
+  background: #fff;
+  width: 100%; 
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #fff;
+  height: 180px;
+ 
+ 
+}
+
+.offre-model h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.offre-model p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.offre-model div {
+  display: flex;
+  align-items: center;
+}
+
+.offre-model i {
+  color: #0065fc;
+  margin-right: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.info h2,
+.info p,
+.info div {
+  align-self: flex-start;
+}
+
+.heb-plus {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .offre-model {
+    width: calc(50% - 30px); /* Two columns with 30px gap */
+    height: auto; /* Reset height to auto */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hebergements {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -276,7 +407,7 @@ header .logo img {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-}
+} */
 
 
 
