@@ -149,6 +149,12 @@ header .logo img {
   cursor: pointer;
 }
 
+.search-bar button .icon {
+  display: none;
+}
+
+
+
 .filtreAll {
   padding: 15px;
   border-radius: 5px;
@@ -611,8 +617,8 @@ header .logo img {
 
 @media (max-width: 768px) {
   .offre-model {
-    flex-basis: calc(100% - 30px); /* 1 column */
-    max-width: calc(100% - 30px); /* 1 column */
+    flex-basis: calc(100% - 30px); 
+    max-width: calc(100% - 30px); 
   }
 
   .filtreAll ul {
@@ -621,7 +627,48 @@ header .logo img {
     justify-content: space-between;
     max-width: 350px;
   }
+  .main-container {
+  }
+
+  .menus {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    margin-left: 50px;
+    align-items: center;
+  }
+
+  .log {
+    width: 100px;
+  }
+
+  .menus {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+    /* Hide the text on mobile */
+    .search-bar button .text {
+      display: none;
+    }
+  
+    /* Show the icon on mobile */
+    .search-bar button .icon {
+      display: inline;
+    }
+
+ 
 }
+
+
+
+
 
 
 
