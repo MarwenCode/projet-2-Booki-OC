@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@ header {
 
   #liste_menus li:first-child a {
     color: #0065fc;
-    /* border-top: solid 3px #0065fc; */
+  
     display: flex;
   
   }
@@ -244,8 +244,8 @@ header .logo img {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  flex-basis: calc(33.33% - 30px); /* Initially, 3 columns */
-  max-width: calc(33.33% - 30px); /* Initially, 3 columns */
+  flex-basis: calc(33.33% - 30px); 
+  max-width: calc(33.33% - 30px); 
 }
 
 .offre-model img {
@@ -403,8 +403,21 @@ header .logo img {
   font-weight: 700;
 } */
 
+/*populaires */
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .activités {
   width: 100%;
 }
@@ -484,7 +497,7 @@ header .logo img {
 .item ul li a {
   font-weight: 400;
   color: rgb(37, 36, 36);
-}
+} */
 
 
 
@@ -496,8 +509,14 @@ header .logo img {
 
 
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+
+
+/* @media (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
   .main-container {
+    width: 100%;
   }
 
   .menus {
@@ -523,7 +542,7 @@ header .logo img {
 
   .filtre {
     order: -1;
-    /* margin-bottom: 10px; */
+
     margin-right: 550px;
   }
 
@@ -547,6 +566,7 @@ header .logo img {
 
  .hebergements {
   min-width: 350px;
+  width: 100%;
 
 
  }
@@ -564,6 +584,7 @@ header .logo img {
 
   .hebergements-and-populaires {
     flex-direction: column;
+    width: 100%;
   }
 
   .populaires {
@@ -616,6 +637,8 @@ header .logo img {
 
 
 @media (max-width: 768px) {
+
+
   .offre-model {
     flex-basis: calc(100% - 30px); 
     max-width: calc(100% - 30px); 
@@ -653,22 +676,33 @@ header .logo img {
     margin-top: 20px;
   }
 
-    /* Hide the text on mobile */
+  
     .search-bar button .text {
       display: none;
     }
   
-    /* Show the icon on mobile */
-    .search-bar button .icon {
+  
+    .search-bar button .icon{
       display: inline;
+     
+    }
+
+    .search span i {
+      color: white;
+      margin-bottom: 60px;
+    }
+
+    .hebergements-and-populaires {
+     display: flex;
+      flex-direction: column;
     }
 
  
-}
+} */
 
 
 
 
 
 
-
+ 
