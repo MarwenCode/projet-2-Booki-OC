@@ -395,6 +395,16 @@ a {
   align-items: center;
 }
 
+.populaires-title h2 {
+  margin: 0; /* Remove any default margin on the title */
+}
+
+.populaires-title i {
+  /* Adjust the margin or padding as needed to create space between the title and icon */
+  margin-left: 30px; /* Add margin to the left of the icon */
+}
+
+
 .populaires-cards .card {
   display: flex;
   margin-top: 33px;
@@ -419,6 +429,7 @@ a {
 .populaires-cards .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
+  
 }
 
 .populaires-cards .card-subtitle {
@@ -610,6 +621,7 @@ a {
     width: 100%;
     margin-top: 50px;
   }
+ 
 
   .populaires-cards {
     display: flex;
@@ -784,6 +796,19 @@ a {
     .cards img {
      min-width: 100% ;
     
+    }
+
+
+    .footer {
+      display: flex;
+     flex-direction: column;
+      
+    }
+
+    .links {
+      flex-wrap: wrap;
+      /* flex-grow: 1; */
+      gap: 30px;
     }
  
 }
